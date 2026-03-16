@@ -1,70 +1,191 @@
 # 🐾 AI Wildlife Monitoring System
 
-A **real-time wildlife monitoring and analytics system** built with **Streamlit** for the frontend and **Flask + MySQL** for the backend. This system tracks animal stress, health, behavior, and provides analytics for wildlife monitoring centers or zoos.
+![Project Preview](screenshots/dashboard.png)
+
+A **real-time wildlife monitoring and analytics system** built with **Streamlit, Flask, and MySQL**.  
+The platform helps wildlife parks, zoos, and conservation centers monitor **animal health, stress behavior, and activity patterns** using data analytics and AI-ready architecture.
 
 ---
 
-## Features
+# 🎯 Features
 
-- **Dashboard Overview**
-  - Total animals, healthy/sick animals, total enclosures
-  - Species distribution (pie chart)
+## 📊 Dashboard Overview
+- Total animals overview
+- Healthy vs sick animals
+- Total enclosures
+- Species distribution visualization
 
-- **Species Analytics**
-  - Bar chart of animals per species
+## 🐾 Stress Monitoring
+- Detect animals showing unusual stress behavior
+- Stress event logs
+- High-risk stress alerts
+- Stress heatmap visualization
 
-- **Stress Monitoring**
-  - Animal stress logs
-  - Stress alerts for high-risk animals
-  - Heatmap of stress/movement
-  - AI anomaly detection for unusual behavior
+## 📈 Species Analytics
+- Species population distribution
+- Interactive charts and analytics
+- Wildlife population insights
 
-- **Behavior Feed**
-  - Live behavior logs
-  - Stress timeline visualization
+## 🧠 Behavior Monitoring Feed
+- Live behavior logs
+- Stress timeline visualization
+- Activity tracking
 
-- **Video / Live Feed Simulation**
-  - Upload videos to simulate cage feed
-  - Placeholder for live camera feed integration
-  - YOLO detection support (future)
+## 🎥 Video / Live Feed Simulation
+- Upload wildlife videos
+- Simulate cage camera feed
+- Ready for **YOLO object detection integration**
 
 ---
 
-## Installation
+# 🏗 System Architecture
+Camera Feed / Behavior Logs
+│
+▼
+Flask API Layer
+│
+▼
+MySQL Database
+│
+▼
+Streamlit Dashboard
+│
+▼
+AI Analytics & Alerts
 
-1. **Clone the repository**
 
-```bash
+---
+
+# 🛠 Tech Stack
+
+| Layer | Technology |
+|------|-------------|
+| Frontend | Streamlit |
+| Backend | Flask |
+| Database | MySQL |
+| Visualization | Plotly |
+| Computer Vision | OpenCV |
+| AI Integration | YOLO (future integration) |
+
+---
+
+# 📁 Project Structure
+AI-Wildlife-Monitoring-System
+│
+├── app.py
+├── config.py
+├── db.py
+├── requirements.txt
+├── streamlit_run.py
+│
+├── routes
+│ ├── animals.py
+│ ├── enclosures.py
+│ ├── feeding.py
+│ ├── health.py
+│ ├── behavior.py
+│ ├── behavior_logs.py
+│ ├── dashboard.py
+│ ├── alerts.py
+│ ├── health_risk.py
+│ └── stress_monitor.py
+│
+├── screenshots
+│ ├── dashboard.png
+│ ├── stress.png
+│ ├── behavior.png
+│ ├── species.png
+│ └── video.png
+│
+└── videos ###future Integration
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone the Repository
 git clone https://github.com/MuhammadShayan8401/AI-Wildlife-Monitoring-System.git
-cd AI-Wildlife-Monitoring
 
-🧪 Try Video Upload Analytics
+cd AI-Wildlife-Monitoring-System
 
-You can upload sample wildlife footage (or zoo videos) in the Video / Live Feed tab.
-This will simulate YOLO detection and display stress analytics.
+## 3️⃣ Install Dependencies
 
-🛠 Future Work
+pip install -r requirements.txt
 
-🚀 Live camera feed integration from enclosure CCTV
-🚀 Real-time stress prediction models
-🚀 Advanced YOLO animal recognition
-🚀 Mobile browser friendly dashboard
-🚀 Deployment with Docker / Kubernetes
+---
 
-📜 License
+# 📊 Demo Screenshots
 
-This project is licensed under the MIT License — feel free to use and improve!
+## Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-📊 Demo Screenshots
-![Dashboard](![alt text](image.png))
-![Stress Monitoring](alt text](image-2.png),![alt text](image-3.png)
-![Behavior Feed](![alt text](image-4.png))
-![Species Analytics](alt text](image-1.pngg))
-![Video / Camera Feed Simulation]![alt text](image-5.png))
+## Stress Monitoring
+![Stress Monitoring](screenshots/stress.png)
 
-📬 Contact
+## Behavior Feed
+![Behavior Feed](screenshots/behavior.png)
 
-Muhammad Shayan Ahmed
-SSUET ’27 | Wildlife AI | Software Engineer
-📧 (m.shayan.8401@gmail.com)
-🔗 https://github.com/MuhammadShayan8401
+## Species Analytics
+![Species Analytics](screenshots/species.png)
+
+## Video Feed Simulation
+![Video Feed](screenshots/video.png)
+
+---
+
+# 🧪 Example Use Cases
+
+This system can be used by:
+
+- Zoos
+- Wildlife parks
+- Animal rehabilitation centers
+- Wildlife research labs
+- Conservation organizations
+
+---
+
+# 🚀 Future Improvements
+
+Planned enhancements:
+
+- Live cage camera feeds
+- YOLO animal detection
+- AI-based stress prediction
+- Mobile-friendly dashboard
+- Cloud deployment
+- Machine learning behavior prediction
+
+---
+
+# 👨‍💻 Author
+
+**Muhammad Shayan Ahmed**
+
+Software Engineering Student  
+SSUET '27  
+
+Interests:
+- Artificial Intelligence
+- Data Analytics
+- Wildlife Technology
+- Computer Vision
+
+GitHub:  
+https://github.com/MuhammadShayan8401  
+
+Email:  
+m.shayan.8401@gmail.com
+
+---
+
+# ⭐ Support
+
+If you like this project, please consider giving it a **star ⭐ on GitHub**.
+
+---
+
+# 📜 License
+
+MIT License  
+Free to use for research and educational purposes.
